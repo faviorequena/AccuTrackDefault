@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AccuTrackDefault.Views.Auth.Login"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="">
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Offset="0.1" Color="White" />
+            <GradientStop Offset="1.0" Color="DarkGray" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <StackLayout>
+
+        <VerticalStackLayout Padding="30,0" Spacing="25">
+
+            <Image
+                HeightRequest="250"
+                Source="accutrack.png"
+                WidthRequest="250" />
+
+            <Label FontAttributes="Bold" Text="Username: " />
+            <Entry x:Name="txtUsername" />
+
+            <Label FontAttributes="Bold" Text="Password: " />
+            <Entry x:Name="txtPassword" IsPassword="True" />
+
+            <Button
+                x:Name="btnLogin"
+                BackgroundColor="#002b6d"
+                Clicked="LoginOnClick"
+                HorizontalOptions="Fill"
+                Text="LOGIN" />
+
+        </VerticalStackLayout>
+
+    </StackLayout>
+</ContentPage>

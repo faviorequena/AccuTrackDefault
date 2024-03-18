@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Application
+    x:Class="AccuTrackDefault.App"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:AccuTrackDefault">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <Style TargetType="TabBar">
+                <Setter Property="Shell.TabBarBackgroundColor" Value="#002b6d" />
+                <Setter Property="Shell.TabBarForegroundColor" Value="#f36f22" />
+                <Setter Property="Shell.TabBarTitleColor" Value="#f36f22" />
+                <Setter Property="Shell.TabBarUnselectedColor" Value="AntiqueWhite" />
+            </Style>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

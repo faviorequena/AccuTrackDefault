@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Shell
+    x:Class="AccuTrackDefault.Views.Main.MainMenu"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:view="clr-namespace:AccuTrackDefault"
+    Title="MainMenu">
+
+
+    <TabBar>
+        <ShellContent
+            Title="Sync"
+            ContentTemplate="{DataTemplate view:MainPage}"
+            Icon="refresh.png" />
+        <ShellContent
+            Title="Gas Receipt"
+            ContentTemplate="{DataTemplate view:MainPage}"
+            Icon="gasstation.png" />
+        <ShellContent
+            Title="Flashlight"
+            ContentTemplate="{DataTemplate view:MainPage}"
+            Icon="flashlight.png" />
+        <ShellContent
+            Title="Info"
+            ContentTemplate="{DataTemplate view:MainPage}"
+            Icon="question.png" />
+        <ShellContent
+            Title="Menu"
+            ContentTemplate="{DataTemplate view:MainPage}"
+            Icon="menu.png" />
+    </TabBar>
+
+
+</Shell>
+
+

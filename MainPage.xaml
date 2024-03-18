@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AccuTrackDefault.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="">
+
+    <ContentPage.Resources>
+        <Style x:Key="CardFrameStyle" TargetType="Frame">
+            <Setter Property="BackgroundColor" Value="white" />
+            <Setter Property="CornerRadius" Value="2" />
+            <Setter Property="Margin" Value="5" />
+            <Setter Property="Padding" Value="5" />
+            <Setter Property="HasShadow" Value="True" />
+            <Setter Property="VerticalOptions" Value="Center" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="WidthRequest" Value="300" />
+            <Setter Property="HeightRequest" Value="50" />
+        </Style>
+
+        <Style x:Key="CardImageStyle" TargetType="Image">
+            <Setter Property="HeightRequest" Value="24" />
+            <Setter Property="WidthRequest" Value="24" />
+        </Style>
+
+        <Style x:Key="CardLabelStyle" TargetType="Label">
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="FontFamily" Value="OpenSans-Semibold" />
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="VerticalOptions" Value="Center" />
+            <Setter Property="FontAttributes" Value="Bold" />
+        </Style>
+
+    </ContentPage.Resources>
+
+    <ContentPage.Background>
+        <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+            <GradientStop Offset="0.1" Color="White" />
+            <GradientStop Offset="1.0" Color="DarkGray" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <StackLayout>
+        <Image
+            HeightRequest="250"
+            Source="accutrack.png"
+            WidthRequest="250" />
+
+        <Frame x:Name="frame1" Style="{StaticResource CardFrameStyle}">
+            <Grid>
+                <Image
+                    Grid.Column="0"
+                    Margin="5,0,0,0"
+                    HorizontalOptions="Start"
+                    Source="play_button.png"
+                    Style="{StaticResource CardImageStyle}"
+                    VerticalOptions="Center" />
+                <Label
+                    Grid.Column="1"
+                    HorizontalOptions="Center"
+                    Style="{StaticResource CardLabelStyle}"
+                    Text="SELECT ROUTE"
+                    VerticalOptions="Center" />
+                <Image
+                    Grid.Column="2"
+                    Margin="0,0,5,0"
+                    HorizontalOptions="End"
+                    Source="arrow_right.png"
+                    Style="{StaticResource CardImageStyle}"
+                    VerticalOptions="Center" />
+            </Grid>
+        </Frame>
+        <!--  Segundo card  -->
+        <Frame x:Name="frame2" Style="{StaticResource CardFrameStyle}">
+            <Grid>
+                <Image
+                    Grid.Column="0"
+                    Margin="5,0,0,0"
+                    HorizontalOptions="Start"
+                    Source="playgray.png"
+                    Style="{StaticResource CardImageStyle}"
+                    VerticalOptions="Center" />
+                <Label
+                    Grid.Column="1"
+                    HorizontalOptions="Center"
+                    Style="{StaticResource CardLabelStyle}"
+                    Text="START ROUTE"
+                    VerticalOptions="Center" />
+                <Image
+                    Grid.Column="2"
+                    Margin="0,0,5,0"
+                    HorizontalOptions="End"
+                    Source="lock.png"
+                    Style="{StaticResource CardImageStyle}"
+                    VerticalOptions="Center" />
+            </Grid>
+        </Frame>
+        <!--  Tercer card  -->
+        <Frame x:Name="frame3" Style="{StaticResource CardFrameStyle}">
+            <Grid>
+                <Image
+                    Grid.Column="0"
+                    Margin="5,0,0,0"
+                    HorizontalOptions="Start"
+                    Source="circle.png"
+                    Style="{StaticResource CardImageStyle}"
+                    VerticalOptions="Center" />
+                <Label
+                    Grid.Column="1"
+                    HorizontalOptions="Center"
+                    Style="{StaticResource CardLabelStyle}"
+                    Text="VISITS"
+                    VerticalOptions="Center" />
+                <Image
+                    Grid.Column="2"
+                    Margin="0,0,5,0"
+                    HorizontalOptions="End"
+                    Source="lock.png"
+                    Style="{StaticResource CardImageStyle}"
+                    VerticalOptions="Center" />
+            </Grid>
+        </Frame>
+        <!--  Cuarto card  -->
+        <Frame x:Name="frame4" Style="{StaticResource CardFrameStyle}">
+            <Grid>
+                <Image
+                    Grid.Column="0"
+                    Margin="5,0,0,0"
+                    HorizontalOptions="Start"
+                    Source="delivery_truck.png"
+                    Style="{StaticResource CardImageStyle}"
+                    VerticalOptions="Center" />
+                <Label
+                    Grid.Column="1"
+                    HorizontalOptions="Center"
+                    Style="{StaticResource CardLabelStyle}"
+                    Text="FINISH ROUTE"
+                    VerticalOptions="Center" />
+                <Image
+                    Grid.Column="2"
+                    Margin="0,0,5,0"
+                    HorizontalOptions="End"
+                    Source="lock.png"
+                    Style="{StaticResource CardImageStyle}"
+                    VerticalOptions="Center" />
+            </Grid>
+        </Frame>
+        <!--  Quinto card  -->
+        <Frame x:Name="frame5" Style="{StaticResource CardFrameStyle}">
+            <Grid>
+                <Image
+                    Grid.Column="0"
+                    Margin="5,0,0,0"
+                    HorizontalOptions="Start"
+                    Source="flagicon.png"
+                    Style="{StaticResource CardImageStyle}"
+                    VerticalOptions="Center" />
+                <Label
+                    Grid.Column="1"
+                    HorizontalOptions="Center"
+                    Style="{StaticResource CardLabelStyle}"
+                    Text="ARRIVE AT THE LAB"
+                    VerticalOptions="Center" />
+                <Image
+                    Grid.Column="2"
+                    Margin="0,0,5,0"
+                    HorizontalOptions="End"
+                    Source="lock.png"
+                    Style="{StaticResource CardImageStyle}"
+                    VerticalOptions="Center" />
+            </Grid>
+        </Frame>
+        <!--  Sexto card  -->
+        <Frame x:Name="frame6" Style="{StaticResource CardFrameStyle}">
+            <Grid>
+                <Image
+                    Grid.Column="0"
+                    Margin="5,0,0,0"
+                    HorizontalOptions="Start"
+                    Source="arrow.png"
+                    Style="{StaticResource CardImageStyle}"
+                    VerticalOptions="Center" />
+                <Label
+                    Grid.Column="1"
+                    HorizontalOptions="Center"
+                    Style="{StaticResource CardLabelStyle}"
+                    Text="TRANSFER SAMPLES"
+                    VerticalOptions="Center" />
+                <Image
+                    Grid.Column="2"
+                    Margin="0,0,5,0"
+                    HorizontalOptions="End"
+                    Source="arrow_right.png"
+                    Style="{StaticResource CardImageStyle}"
+                    VerticalOptions="Center" />
+            </Grid>
+        </Frame>
+    </StackLayout>
+
+</ContentPage>
